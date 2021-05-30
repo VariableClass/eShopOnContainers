@@ -35,6 +35,6 @@ jobs:
           image: ghcr.io/variableclass/ordering.backgroundtasks:latest
           registry-login-server: ghcr.io
           registry-username: ${{ github.repository_owner }}
-          registry-password: ${{ secrets.GITHUB_TOKEN }}
+          registry-password: ${{ secrets.GH_PAT_TOKEN }}
           name: aci-ordering-backgroundtasks-test
           location: norwayeast
